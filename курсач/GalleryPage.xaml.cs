@@ -59,21 +59,19 @@ namespace курсач
             if (photoToDelete != null)
             {
                 Photos.Remove(photoToDelete);
-                // Здесь вы можете добавить код для удаления изображения из файловой системы или базы данных
             }
         }
 
-        // Обработчик для кнопки "На главную"
         private async void OnHomeClicked(object sender, EventArgs e)
         {
-            await Navigation.PopAsync(); // Возвращаемся на предыдущую страницу
+            await Navigation.PopAsync();
         }
     }
 
     // Класс для представления фотографии
     public class Photo
     {
-        public string Thumbnail { get; set; } // Путь к миниатюре
-        public string FullImagePath { get; set; } // Путь к полному изображению
+        public string Thumbnail { get; set; } 
+        public string FullImagePath { get; set; } 
     }
 }
