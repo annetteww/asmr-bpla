@@ -21,12 +21,10 @@ namespace курсач
                 // Получение потока захваченного изображения
                 var stream = await photo.OpenReadAsync();
 
-                // Переход на страницу просмотра изображения, передавая поток
                 await Navigation.PushAsync(new ImageViewPage(stream));
             }
             catch (Exception ex)
             {
-                // Обработка ошибок (например, если пользователь отменил съемку)
                 await DisplayAlert("Ошибка", ex.Message, "OK");
             }
         }
