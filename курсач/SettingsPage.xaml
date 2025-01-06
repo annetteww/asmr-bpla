@@ -1,0 +1,11 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="курсач.SettingsPage">
+    <StackLayout Padding="20">
+        <Label Text="Настройки" FontSize="24" HorizontalOptions="Center" />
+        <Label Text="Уведомления" />
+        <Switch x:Name="notificationsSwitch" />
+        <Button Text="Справка" Clicked="OnHelpClicked" />
+        <Button Text="На главную" Clicked="OnHomeClicked" />
+    </StackLayout>
+</ContentPage>

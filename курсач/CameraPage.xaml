@@ -1,0 +1,9 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="курсач.CameraPage">
+    <StackLayout>
+        <Label Text="Экран съемки" FontSize="24" HorizontalOptions="Center" />
+        <Button Text="Сделать снимок" Clicked="OnCapturePhotoClicked" />
+        <Button Text="Отмена" Clicked="OnCancelClicked" />
+    </StackLayout>
+</ContentPage>

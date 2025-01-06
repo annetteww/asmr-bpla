@@ -1,0 +1,21 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="курсач.FlightsPage">
+    <StackLayout>
+        <Label Text="Запланированные полеты" FontSize="24" HorizontalOptions="Center" />
+        <ListView x:Name="flightsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10,0,0,0">
+                            <!-- Добавлен отступ слева -->
+                            <Label Text="{Binding FlightInfo}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Скачать" Clicked="OnDownloadClicked" />
+        <Button Text="На главную" Clicked="OnHomeClicked" />
+    </StackLayout>
+</ContentPage>
