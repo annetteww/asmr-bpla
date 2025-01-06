@@ -12,7 +12,6 @@ namespace курсач
 
         private async void OnHelpClicked(object sender, EventArgs e)
         {
-            // Логика для открытия справки или обучающих материалов
             await DisplayAlert("Справка", "Здесь будет информация о приложении.", "OK");
         }
 
