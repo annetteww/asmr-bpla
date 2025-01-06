@@ -14,7 +14,6 @@ namespace курсач
 
         private void DisplayImage(Stream imageStream)
         {
-            // Устанавливаем источник изображения
             imageView.Source = ImageSource.FromStream(() => imageStream);
         }
 
@@ -25,7 +24,6 @@ namespace курсач
 
         private async void OnShareClicked(object sender, EventArgs e)
         {
-            // Реализуйте логику для поделиться изображением
         }
     }
 }
